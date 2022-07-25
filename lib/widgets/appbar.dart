@@ -38,7 +38,7 @@ getAppBar(
           width: MediaQuery.of(context).size.width * 0.7,
           child: Text(
             strAppBarTitle,
-            style: myAppTheme.textTheme.display1,
+            style: myAppTheme.textTheme.headline4,
             textAlign: TextAlign.center,
           ),
         ),

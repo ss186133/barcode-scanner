@@ -183,7 +183,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                 Padding(
                                   padding: const EdgeInsets.all(8.0),
                                   child: Text(mapProduct["model"],
-                                      style: myAppTheme.textTheme.body1,
+                                      style: myAppTheme.textTheme.bodyText1,
                                       overflow: TextOverflow.ellipsis,
                                       textAlign: TextAlign.right),
                                 ),
@@ -193,7 +193,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 //                                width: MediaQuery.of(context).size.width - 150,
 //                                padding: EdgeInsets.all(15),
 //                                child: Text(mapProduct["description"],
-//                                    style: myAppTheme.textTheme.body2,
+//                                    style: myAppTheme.textTheme.bodyText2,
 //                                    overflow: TextOverflow.ellipsis,
 //                                    maxLines: 3,
 //                                    textAlign: TextAlign.right),
@@ -203,7 +203,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                 Padding(
                                   padding: const EdgeInsets.all(8.0),
                                   child: Text("Discount: " + mapProduct["discount"].toString() + "%",
-                                      style: myAppTheme.textTheme.body1.copyWith(fontWeight: FontWeight.bold),
+                                      style: myAppTheme.textTheme.bodyText1.copyWith(fontWeight: FontWeight.bold),
                                       overflow: TextOverflow.ellipsis,
                                       textAlign: TextAlign.right),
                                 ),
@@ -212,7 +212,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                 Padding(
                                   padding: const EdgeInsets.all(8.0),
                                   child: Text("Price: " + mapProduct["price"].toString(),
-                                      style: myAppTheme.textTheme.body1.copyWith(fontWeight: FontWeight.bold),
+                                      style: myAppTheme.textTheme.bodyText1.copyWith(fontWeight: FontWeight.bold),
                                       overflow: TextOverflow.ellipsis,
                                       textAlign: TextAlign.right),
                                 ),
@@ -292,12 +292,12 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 //                  children: <Widget>[
 //                    Text(
 //                      "Total Discount:   ",
-//                      style: myAppTheme.textTheme.body1,
+//                      style: myAppTheme.textTheme.bodyText1,
 //                      overflow: TextOverflow.ellipsis,
 //                    ),
 //                    Text(
 //                      dbTotalDiscount.toString(),
-//                      style: myAppTheme.textTheme.body1,
+//                      style: myAppTheme.textTheme.bodyText1,
 //                      overflow: TextOverflow.ellipsis,
 //                    ),
 //                  ],
@@ -312,12 +312,12 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   children: <Widget>[
                     Text(
                       "Total Price:   ",
-                      style: myAppTheme.textTheme.body1,
+                      style: myAppTheme.textTheme.bodyText1,
                       overflow: TextOverflow.ellipsis,
                     ),
                     Text(
                       dbTotalPrice.toString(),
-                      style: myAppTheme.textTheme.body1,
+                      style: myAppTheme.textTheme.bodyText1,
                       overflow: TextOverflow.ellipsis,
                     ),
                   ],

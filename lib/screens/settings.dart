@@ -56,14 +56,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
                               value: userProfile.containsKey("Theme") && userProfile["Theme"] != null
                                   ? userProfile["Theme"]
                                   : null,
-                              hint: Text("Theme", style: myAppTheme.textTheme.body2, textAlign: TextAlign.center),
+                              hint: Text("Theme", style: myAppTheme.textTheme.bodyText2, textAlign: TextAlign.center),
                               items: ["Dark Theme", "Light Theme"].map((String value) {
                                 return new DropdownMenuItem<String>(
                                   value: value,
-                                  child: new Text(value, style: myAppTheme.textTheme.body2),
+                                  child: new Text(value, style: myAppTheme.textTheme.bodyText2),
                                 );
                               }).toList(),
-                              style: myAppTheme.textTheme.body2,
+                              style: myAppTheme.textTheme.bodyText2,
                               onChanged: (String val) async {
                                 showSnackBar(scaffoldKey: _scaffoldKey, text: "Please wait, saving...");
 
@@ -90,7 +90,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         padding: const EdgeInsets.fromLTRB(12, 0, 12, 12),
                         child: Text(
                           "Choose your theme",
-                          style: myAppTheme.textTheme.body2,
+                          style: myAppTheme.textTheme.bodyText2,
                         ),
                       ),
                     ])),

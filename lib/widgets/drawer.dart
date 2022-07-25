@@ -38,7 +38,7 @@ getDrawer(BuildContext context, GlobalKey<ScaffoldState> scaffoldKey) {
                 //Menu Text
                 Text(
                   "Menu",
-                  style: myAppTheme.textTheme.body1,
+                  style: myAppTheme.textTheme.bodyText1,
                   textAlign: TextAlign.center,
                 ),
 
@@ -83,7 +83,7 @@ getDrawer(BuildContext context, GlobalKey<ScaffoldState> scaffoldKey) {
                     padding: const EdgeInsets.all(8),
                     child: Text(
                       userProfile.containsKey("email") ? userProfile["email"] : "Unknown Email",
-                      style: myAppTheme.textTheme.body2,
+                      style: myAppTheme.textTheme.bodyText2,
                     ),
                   ),
                 ])),
@@ -109,7 +109,7 @@ getDrawer(BuildContext context, GlobalKey<ScaffoldState> scaffoldKey) {
                           padding: const EdgeInsets.all(8),
                           child: Text(
                             "Manage the settings and your prefrences from here",
-                            style: myAppTheme.textTheme.body2,
+                            style: myAppTheme.textTheme.bodyText2,
                           ),
                         ),
                       ]),
@@ -175,7 +175,7 @@ getDrawer(BuildContext context, GlobalKey<ScaffoldState> scaffoldKey) {
                     padding: const EdgeInsets.all(8),
                     child: Text(
                       "Made by Chetan Rakhasiya",
-                      style: myAppTheme.textTheme.body2,
+                      style: myAppTheme.textTheme.bodyText2,
                     ),
                   ),
                 ]),

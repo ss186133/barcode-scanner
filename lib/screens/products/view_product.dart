@@ -98,7 +98,7 @@ class _ViewProductScreenState extends State<ViewProductScreen> with TickerProvid
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(mapProduct["model"],
-                  style: myAppTheme.textTheme.body1, overflow: TextOverflow.ellipsis, textAlign: TextAlign.right),
+                  style: myAppTheme.textTheme.bodyText1, overflow: TextOverflow.ellipsis, textAlign: TextAlign.right),
             ),
 
             //Description
@@ -106,7 +106,7 @@ class _ViewProductScreenState extends State<ViewProductScreen> with TickerProvid
               width: MediaQuery.of(context).size.width - 150,
               padding: EdgeInsets.all(15),
               child: Text(mapProduct["description"],
-                  style: myAppTheme.textTheme.body2,
+                  style: myAppTheme.textTheme.bodyText2,
                   overflow: TextOverflow.ellipsis,
                   maxLines: 3,
                   textAlign: TextAlign.right),
@@ -116,7 +116,7 @@ class _ViewProductScreenState extends State<ViewProductScreen> with TickerProvid
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text("Discount: " + mapProduct["discount"].toString() + "%",
-                  style: myAppTheme.textTheme.body1.copyWith(fontWeight: FontWeight.bold),
+                  style: myAppTheme.textTheme.bodyText1.copyWith(fontWeight: FontWeight.bold),
                   overflow: TextOverflow.ellipsis,
                   textAlign: TextAlign.right),
             ),
@@ -125,7 +125,7 @@ class _ViewProductScreenState extends State<ViewProductScreen> with TickerProvid
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text("Price: " + mapProduct["price"].toString(),
-                  style: myAppTheme.textTheme.body1.copyWith(fontWeight: FontWeight.bold),
+                  style: myAppTheme.textTheme.bodyText1.copyWith(fontWeight: FontWeight.bold),
                   overflow: TextOverflow.ellipsis,
                   textAlign: TextAlign.right),
             ),
@@ -134,7 +134,7 @@ class _ViewProductScreenState extends State<ViewProductScreen> with TickerProvid
 //            Padding(
 //              padding: const EdgeInsets.all(8.0),
 //              child: Text("Quantity: " + mapProducts.values.elementAt(index).toString(),
-//                  style: myAppTheme.textTheme.body1.copyWith(fontWeight: FontWeight.bold),
+//                  style: myAppTheme.textTheme.bodyText1.copyWith(fontWeight: FontWeight.bold),
 //                  overflow: TextOverflow.ellipsis,
 //                  textAlign: TextAlign.right),
 //            ),
